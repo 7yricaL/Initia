@@ -13,7 +13,6 @@
 
 .u-section-1 .u-repeater-1 {
   min-height: 50px;
-  grid-auto-columns: calc(33.3333% - 84px);
   grid-template-columns: calc(33.3333% - 84px) calc(33.3333% - 84px) calc(33.3333% - 84px);
   grid-gap: 126px 126px;
 }
@@ -51,18 +50,10 @@
   padding: 0 19px;
 }
 
-@media (max-width: 1199px) {
-  .u-section-1 .u-repeater-1 {
-    grid-auto-columns: calc(33.333333333333336% - 84px);
-    grid-template-columns: repeat(3, calc(33.333333333333336% - 84px));
-  }
-}
-
 @media (max-width: 991px) {
   .u-section-1 .u-repeater-1 {
     min-height: 324px;
-    grid-auto-columns: calc(50% - 63px);
-    grid-template-columns: repeat(2, calc(50% - 63px));
+    grid-template-columns: calc(50% - 63px) calc(50% - 63px);
   }
 }
 
@@ -72,7 +63,6 @@
   }
 
   .u-section-1 .u-repeater-1 {
-    grid-auto-columns: calc(100% - 0px);
     grid-template-columns: 100%;
   }
 }
@@ -80,10 +70,6 @@
 @media (max-width: 575px) {
   .u-section-1 .u-list-1 {
     width: 340px;
-  }
-
-  .u-section-1 .u-repeater-1 {
-    grid-auto-columns: 100%;
   }
 } .u-section-2 {
   background-image: url("images/MITSolve_Poster2_2022-10-02_00.26.35.png");
