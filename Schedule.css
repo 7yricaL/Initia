@@ -222,61 +222,17 @@
   }
 
   .u-section-1 .u-countdown-1 {
-    margin-top: 40px;
-    margin-left: -10px;
-    margin-right: -10px;
+    margin-top: 57px;
+    margin-left: -37px;
+    margin-right: -37px;
     padding: 4px 0;
   }
 
-  .u-section-1 .u-countdown-counter-1 {
-    font-size: 2.25rem;
-  }
-
-  .u-section-1 .u-countdown-separator-1 {
-    font-size: 2.25rem;
-  }
-
-  .u-section-1 .u-countdown-counter-2 {
-    font-size: 2.25rem;
-  }
-
-  .u-section-1 .u-countdown-separator-2 {
-    font-size: 2.25rem;
-  }
-
-  .u-section-1 .u-countdown-counter-3 {
-    font-size: 2.25rem;
-  }
-
-  .u-section-1 .u-countdown-separator-3 {
-    font-size: 2.25rem;
-  }
-
-  .u-section-1 .u-countdown-counter-4 {
-    font-size: 2.25rem;
-  }
-
-  .u-section-1 .u-countdown-separator-4 {
-    font-size: 2.25rem;
-  }
-
-  .u-section-1 .u-countdown-counter-5 {
-    font-size: 2.25rem;
-  }
-
-  .u-section-1 .u-countdown-separator-5 {
-    font-size: 2.25rem;
-  }
-
-  .u-section-1 .u-countdown-counter-6 {
-    font-size: 2.25rem;
-  }
-
   .u-section-1 .u-text-2 {
-    width: auto;
-    margin-top: -141px;
-    margin-left: 0;
-    margin-right: 0;
+    width: 340px;
+    margin-top: -177px;
+    margin-left: 1px;
+    margin-right: 1px;
   }
 }.u-section-2 .u-sheet-1 {
   min-height: 2381px;
@@ -752,6 +708,10 @@
     margin-right: initial;
     margin-left: initial;
     width: auto;
+  }
+
+  .u-section-2 .u-repeater-1 {
+    grid-auto-columns: 100%;
   }
 
   .u-section-2 .u-group-1 {
