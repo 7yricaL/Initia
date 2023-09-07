@@ -510,41 +510,40 @@
   }
 
   .u-section-1 .u-list-3 {
-    margin-top: 78px;
-    margin-bottom: 24px;
+    width: 402px;
+    margin: 78px -31px 39px;
   }
 
   .u-section-1 .u-repeater-3 {
-    min-height: 507px;
+    min-height: 492px;
   }
 
   .u-section-1 .u-image-3 {
     height: 351px;
-    margin-top: 54px;
-    margin-left: 83px;
+    margin-top: -16px;
+    margin-left: auto;
   }
 
   .u-section-1 .u-text-10 {
-    margin-top: 23px;
-    margin-right: -145px;
-    margin-left: 145px;
+    margin-top: -43px;
+    margin-right: -146px;
+    margin-left: 146px;
   }
 
   .u-section-1 .u-text-11 {
-    margin-top: 28px;
+    margin-top: 17px;
     margin-left: 29px;
     margin-right: 29px;
   }
 
   .u-section-1 .u-text-12 {
-    width: 315px;
-    margin-top: -456px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: -446px;
+    margin-left: 12px;
+    margin-right: 12px;
   }
 
   .u-section-1 .u-text-13 {
-    margin-top: 199px;
+    margin-top: 202px;
     margin-left: 0;
     margin-right: 0;
   }
