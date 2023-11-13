@@ -4,6 +4,7 @@
 
 .u-section-1 .u-text-1 {
   font-weight: 700;
+  font-size: 4.5rem;
   margin: 15px 100px 15px auto;
 }
 
@@ -14,7 +15,6 @@
 
   .u-section-1 .u-text-1 {
     width: auto;
-    font-size: 4.5rem;
     margin: 8px 25px;
   }
 }
