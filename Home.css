@@ -236,12 +236,16 @@
 
 @media (max-width: 575px) {
    .u-section-2 {
-    min-height: 569px;
+    min-height: 767px;
   }
 
   .u-section-2 .u-group-1 {
-    min-height: 512px;
-    margin-bottom: 33px;
+    min-height: 683px;
+    margin-bottom: 60px;
+  }
+
+  .u-section-2 .u-container-layout-1 {
+    padding-bottom: 14px;
   }
 
   .u-section-2 .u-image-1 {
@@ -256,11 +260,11 @@
   }
 
   .u-section-2 .u-text-2 {
-    margin-top: 186px;
+    margin-top: 15px;
   }
 
   .u-section-2 .u-btn-1 {
-    margin-top: 28px;
+    margin-top: 20px;
   }
 } .u-section-3 {
   background-image: url("images/Initia-General_Comp1_2023-09-04_20.56.16.png");
