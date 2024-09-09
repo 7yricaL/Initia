@@ -1,0 +1,12 @@
+.team-page {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.team-page__members {
+  display: flex;
+  flex-direction: column;
+}

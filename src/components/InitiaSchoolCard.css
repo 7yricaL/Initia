@@ -1,0 +1,112 @@
+.school-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  height: 15rem;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+
+  opacity: 0;
+  animation: dropFadeIn 0.75s forwards;
+
+}
+
+.school-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.school-card__left {
+  display: flex;
+}
+
+.school-card__left > img{
+  height: 100px;
+}
+
+.school-card__mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.school-card__school-name {
+  color: var(--base-colour-blue);
+}
+
+.school-card__president-name > span {
+  margin: 0;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.school-card__president-name {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.school-card__left, .school-card__mid, .school-card__right {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: dropFadeIn 1s forwards;
+  text-align: center;
+}
+
+.school-card__right > .link-btn{
+  padding: 1rem 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .school-card {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .school-card__left {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .school-card__left > img {
+    max-width: 80px;
+    max-height: 80px;
+  }
+
+  .school-card__mid {
+    margin-bottom: 1rem;
+  }
+
+  .school-card__president-name {
+    font-size: 1rem;
+  }
+
+  .school-card__right > .link-btn {
+    width: 100%;
+    padding: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .school-card {
+    padding: 0.5rem;
+  }
+
+  .school-card__left > img {
+    max-width: 60px;
+    max-height: 60px;
+  }
+
+  .school-card__president-name {
+    font-size: 0.9rem;
+  }
+
+  .school-card__right > .link-btn {
+    padding: 0.5rem;
+  }
+}

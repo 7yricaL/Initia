@@ -1,0 +1,54 @@
+.desktop-navbar {
+    width: 100vw;
+    height: var(--navbar-height);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--base-colour-white);
+    background-color: var(--base-colour-dark);
+    position: relative;
+    top: 0;
+    z-index: 10;
+}
+
+.desktop-navbar > a {
+    height: 100%;
+}
+
+.desktop-navbar__logo {
+    height: 100%;
+}
+
+.desktop-navbar__list {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    margin: 1rem;
+}
+
+.desktop-navbar__item {
+    padding: 10px 1rem;
+    background-color: transparent;
+    border-radius: 1.5rem;
+}
+
+.desktop-navbar__item:hover {
+    background-color: var(--item-hover);
+}
+
+.desktop-navbar__item:active {
+    background-color: var(--item-active);
+}
+
+.desktop-navbar__link {
+    color: var(--base-colour-white);
+    font-weight: 800;
+    font-size: 16px;
+}
+
+@media (max-width: 1000px) {
+    .desktop-navbar {
+        display: none;
+    }
+}

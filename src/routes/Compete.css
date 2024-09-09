@@ -1,0 +1,90 @@
+.compete-page {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  .compete-page__challenge {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .compete-page__collaborator {
+    font-size: 1.25rem;
+    color: var(--base-colour-dark);
+    margin-top: 1rem;
+    text-align: center;
+    text-transform: none;
+  }
+  
+  .compete-page__link {
+    color: var(--accent-colour);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .compete-page__link:hover {
+    text-decoration: underline;
+  }
+
+  .competition__deadline
+  {
+    margin: 2rem 0 1.5rem 0;
+  }
+
+  .competition__deadline > span {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  .compete-page__submit-btn {
+    margin: 0rem 0 5rem 0;
+    
+  }
+  
+  .compete-page__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 0 16px;
+  
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: dropFadeIn 1s forwards;
+  }
+  
+  .competition__cards {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+    margin-bottom: 2rem;
+    padding: 0 5rem;
+  
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: dropFadeIn 1s forwards;
+  }
+
+  @media (max-width: 1200px) {
+    .competition__cards {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .compete-page__cards,
+    .competition__cards {
+      padding: 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .compete-page__header {
+      padding: 1rem 0;
+    }
+  }

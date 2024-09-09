@@ -1,0 +1,108 @@
+.solution-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 1.5rem 2rem;
+    height: 6rem;
+    
+    background-color: var(--base-colour-white);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+
+    opacity: 0;
+    animation: dropFadeIn 0.75s forwards;
+}
+
+.solution-card__left {
+    display: flex;
+    margin-right: 2rem;
+}
+
+.solution-card__left > img{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.solution-card__mid {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.solution-card__solution-name {
+    color: var(--base-colour-blue);
+}
+
+.solution-card__solution-authors {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.solution-card__solution-school {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.solution-card__left, .solution-card__mid, .solution-card__right {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: dropFadeIn 1s forwards;
+}
+
+.solution-card__right > .link-btn{
+    padding: 1rem 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .solution-card {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .solution-card__left {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .solution-card__left > img {
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    .solution-card__mid {
+        margin-bottom: 1rem;
+    }
+
+    .solution-card__solution-authors,
+    .solution-card__solution-school {
+        font-size: 1rem;
+    }
+
+    .solution-card__right > .link-btn {
+        width: 100%;
+        padding: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .solution-card {
+        padding: 0.5rem;
+    }
+
+    .solution-card__left > img {
+        max-width: 60px;
+        max-height: 60px;
+    }
+
+    .solution-card__solution-authors,
+    .solution-card__solution-school {
+        font-size: 0.9rem;
+    }
+
+    .solution-card__right > .link-btn {
+        padding: 0.5rem;
+    }
+}

@@ -1,0 +1,33 @@
+[
+    {
+      "title": "Task",
+      "image": "/cards/meducationcomp-task.png",
+      "description": "Participants must create an innovative medical solution that can be used to combat some sort of difficulty in the medical field."
+    },
+    {
+      "title": "Submission",
+      "image": "/cards/competition-submission.png",
+      "description": "Competitors are to write a research paper on the given prompt. This written piece must be a minimum of 2000 words."
+    },
+    {
+      "title": "Awards",
+      "image": "/cards/competition-awards.png",
+      "description": "1st Place - 50 Service Hours\n2nd Place - 40 Service Hours\n3rd Place - 30 Service Hours"
+    },
+    {
+      "title": "Team",
+      "image": "/cards/competition-team.png",
+      "description": "Submissions are to be done as a team. Each team will consist of 2-6 members."
+    },
+    {
+      "title": "Judges",
+      "image": "/cards/competition-judges.png",
+      "description": "Submissions will be judged by college professors in the respective field. More information will be available soon."
+    },
+    {
+      "title": "Guidelines & Rubric",
+      "image": "/cards/competition-rubric.png",
+      "description": "Submissions are to follow the [Rules & Guidelines](https://docs.google.com/document/d/1JYNIXJ2KYk8Cpb_E0VshbDGqg8aztEJopAucTEg0f3E/edit), and will be judged according to [This Rubric](https://docs.google.com/document/d/1JYNIXJ2KYk8Cpb_E0VshbDGqg8aztEJopAucTEg0f3E/edit)."
+    }
+  ]
+  

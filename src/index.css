@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  font-family: "Montserrat", "Open Sans", sans-serif, Inter, system-ui, Avenir, Helvetica, Arial;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --base-colour-black: #242424;
+  --base-colour-dark: #101820;
+  --base-colour-white: #d9d9d9;
+  --base-colour-blue: #478ac9;
+  --base-colour-lgt-blue: #52a4f1;
+  --item-active: #478ac9;
+  --item-hover: rgba(77, 79, 82, 0.75);
+  --button-colour: #101820;
+  --button-text-colour: #ffffff;
+  --button-hover-colour: #333333;
+
+  --navbar-height: 8vh;
+  --footer-height: 12vh;
+
+  --navbar-height-mb: 10vh;
+  --footer-height-mb: 12vh;
+
+  color-scheme: light dark;
+  color: var(--text-colour-dark);
+  background-color: var(--base-colour-white);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: var(--base-colour-white);
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.1;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a:active, a:visited, a:link {
+  text-decoration: none;
+}
+
+button {
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+::placeholder,
+select {
+  font-family: "Montserrat", "Open Sans", sans-serif, Inter, system-ui, Avenir, Helvetica, Arial;
+  color: #9B9FA4;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes dropFadeIn {
+  to {
+      opacity: 1;
+      transform: translateX(0);
+      transform: translateY(0);
+  }
+}

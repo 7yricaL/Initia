@@ -1,0 +1,171 @@
+.member-card {
+    width: 80vw;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 20px 20px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    opacity: 0;
+    animation: dropFadeIn 1s forwards;
+}
+
+.member-card__top, .member-card__middle, .member-card__bottom {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: dropFadeIn 1s forwards;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.member-card__top {
+    background-color: #d4d4d4;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.member-card__middle {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.member-card__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding-right: 1rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.member-card__right {
+    flex: 2;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+}
+
+.member-card__bottom {
+    background-color: #f8f8f8;
+    padding: 1rem;
+    text-align: center;
+    border-top: 2px solid #ddd;
+    width: 100%;
+}
+
+.member-card__image {
+    width: 10vw;
+    height: 10vw;
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 50%;
+}
+
+.member-card__name {
+    font-size: calc(1.2rem + 0.5vw);
+    margin: 0.5em 0;
+}
+
+.member-card__about {
+    font-size: calc(0.8rem + 0.5vw);
+    margin: 0.5em 0;
+}
+
+.member-card__role {
+    font-size: calc(1rem + 0.5vw);
+    margin: 0.5em 0;
+}
+
+.member-card__school {
+    font-size: calc(0.75rem + 0.5vw);
+    margin: 0.5em 0;
+}
+
+.member-card__right > a {
+    font-size: calc(0.65rem + 0.5vw);
+    text-align: center;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.member-card__email-link > a:active, 
+.member-card__email-link > a:visited, 
+.member-card__email-link > a:link {
+    color: var(--base-colour-black);
+    font-weight: 800;
+}
+
+@media (max-width: 768px) {
+    .member-card__left {
+        padding-right: 0;
+    }
+    
+    .member-card__middle {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    .member-card__right {
+        align-items: center;
+        padding-left: 0;
+        border-top: 1px solid #ddd;
+    }
+
+    .member-card__about {
+        padding: 0.5rem;
+    }
+
+    .member-card__email-link {
+        border-top: 1px solid #ddd;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .member-card__email-link > a {
+        position: relative;
+        margin-top: 1rem;
+        bottom: auto;
+        transform: none;
+        left: 0;
+    }
+
+    .member-card__image {
+        width: 20vw;
+        height: 20vw;
+        max-width: 120px;
+        max-height: 120px;
+    }
+
+    .member-card__top {
+        padding: 0.5rem;
+        height: auto;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .member-card__role {
+        font-size: calc(1rem + 1vw);
+    }
+}

@@ -1,0 +1,129 @@
+.mobile-navbar {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .mobile-navbar {
+      width: 100vw;
+      height: var(--navbar-height-mb);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--base-colour-white);
+      background-color: var(--base-colour-dark);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+  }
+
+  .mobile-navbar > a{
+    height: 100%;
+  }
+
+  .navbar__logo {
+    height: 100%;
+  }
+
+  .mobile-menu {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .menu-icon {
+      cursor: pointer;
+      display: block;
+      padding: 10px;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      z-index: 20;
+      background: none;
+      border: none;
+  }
+
+  .menu-icon .navicon {
+      background-color: var(--base-colour-white);
+      display: block;
+      height: 2px;
+      position: relative;
+      transition: background 0.2s ease-out;
+      width: 18px;
+  }
+
+  .menu-icon .navicon:before,
+  .menu-icon .navicon:after {
+      background: var(--base-colour-white);
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all 0.2s ease-out;
+      width: 100%;
+  }
+
+  .menu-icon .navicon:before {
+      top: 5px;
+  }
+
+  .menu-icon .navicon:after {
+      top: -5px;
+  }
+
+  .navicon.open {
+      background: transparent;
+  }
+
+  .navicon.open:before {
+      transform: rotate(-45deg);
+      top: 0;
+  }
+
+  .navicon.open:after {
+      transform: rotate(45deg);
+      top: 0;
+  }
+
+  .navbar__list {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      background-color: var(--base-colour-dark);
+      position: absolute;
+      top: var(--navbar-height-mb);
+      width: 100%;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      z-index: 15;
+  }
+
+  .navbar__list.open {
+      display: flex;
+      animation: dropFadeIn forwards 0.25s;
+      opacity: 0;
+      transform: translateY(-60px);
+  }
+
+  .navbar__item {
+      padding: 10px 0;
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar__link {
+      color: var(--base-colour-white);
+      font-weight: 800;
+      font-size: 16px;
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+  }
+
+  .navbar__link:hover {
+      background-color: var(--item-hover);
+  }
+}

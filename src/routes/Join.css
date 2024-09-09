@@ -1,0 +1,133 @@
+.join-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 2rem;
+}
+
+.join-page__title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.join-form__section::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url('/SchoolClipartBG.png');
+  background-size: contain;
+  background-position: center;
+  opacity: 0.3;
+}
+
+.join-form__section {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  border: 2px solid var(--base-colour-dark);
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  color: var(--base-colour-dark);
+}
+
+.membership__form, .chapter-lead__form {
+  height: 260px;
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.membership__form h2, .chapter-lead__form h2 {
+  font-size: 1.5rem;
+  z-index: 2;
+}
+
+.membership__form p, .chapter-lead__form p {
+  font-size: 1rem;
+  margin: 2rem;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.join-button {
+  z-index: 2;
+}
+
+.join-button:hover {
+  background-color: #004494;
+}
+
+.school-cards__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  justify-content: center;
+  width: 60vw;
+}
+
+.membership-form__header {
+  text-transform: uppercase;
+}
+
+@media (max-width: 1600px) {
+  .school-cards__container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 80vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .join-form__section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .membership__form, .chapter-lead__form {
+    width: 100%;
+  }
+
+  .school-cards__container {
+    grid-template-columns: 1fr;
+    width: 90vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .join-page {
+    padding: 1rem;
+  }
+
+  .school-cards__container {
+    width: 95vw;
+  }
+
+  .join-form__section {
+    padding: 0.5rem;
+  }
+
+  .membership__form h2, .chapter-lead__form h2 {
+    font-size: 1.25rem;
+  }
+
+  .membership__form p, .chapter-lead__form p {
+    font-size: 0.9rem;
+  }
+}
