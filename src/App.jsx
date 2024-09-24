@@ -5,8 +5,8 @@ import Footer from './components/Footer.jsx';
 import MobileNavbar from './components/MobileNavbar.jsx';
 import Navbar from './components/Navbar.jsx';
 import Compete from './routes/Compete.jsx';
-import CompeteMeducation from './routes/CompeteMeducation.jsx';
-import CompeteNutrition from './routes/CompeteNutrition.jsx';
+import RossWebsiteComp from './routes/rossleaders-website-competition.jsx';
+import RossLiteratureComp from './routes/rossleaders-literature-competition.jsx';
 import Home from './routes/Home.jsx';
 import Join from './routes/Join.jsx';
 import Solutions from './routes/Solutions.jsx';
@@ -25,8 +25,8 @@ const App = () => {
         <Route path='/join' element={<Join />} />
         <Route path='/request' element={<Request />} />
         <Route path='/compete' element={<Compete />} />
-        <Route path='/competenutrition' element={<CompeteNutrition />} />
-        <Route path='/competemeducation' element={<CompeteMeducation />} />
+        <Route path='/rossleaders-website-competition' element={<RossWebsiteComp />} />
+        <Route path='/rossleaders-literature-competition' element={<RossLiteratureComp />} />
         <Route path='/solutions' element={<Solutions />} />
         <Route path='/team' element={<Team />} />
       </Routes>

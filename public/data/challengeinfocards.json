@@ -1,4 +1,5 @@
 [
+  [
     {
       "title": "Nutrition Challenge",
       "collaborator": "Back2Basics Nutrition",
@@ -13,5 +14,26 @@
       "image": "/cards/innovativemedicalsolutions.png",
       "competitionLink": "/competemeducation"
     }
+  ],
+  [
+    {
+      "title": "Website Competition",
+      "collaborator": "Ross Leaders",
+      "collabLink": "https://rossleaders.com/",
+      "image": "https://rossleaders.com/wp-content/uploads/2023/08/RLIMG.jpeg",
+      "competitionLink": "/rossleaders-website-competition",
+      "deadline": "TBD",
+      "submissionLink": ""
+    },
+    {
+      "title": "Literature Competition",
+      "collaborator": "Ross Leaders",
+      "collabLink": "https://rossleaders.com/",
+      "image": "https://rossleaders.com/wp-content/uploads/2023/08/RLIMG.jpeg",
+      "competitionLink": "/rossleaders-literature-competition",
+      "deadline": "TBD",
+      "submissionLink": ""
+    }
   ]
+]
   
