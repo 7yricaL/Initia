@@ -69,6 +69,11 @@
     animation: dropFadeIn 1s forwards;
   }
 
+  .loading-placeholder {
+    height: 800px; /* Adjust based on your layout */
+    width: 100%;
+  }
+
   @media (max-width: 1200px) {
     .competition__cards {
       width: 100%;

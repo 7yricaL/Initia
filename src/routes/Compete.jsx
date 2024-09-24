@@ -6,12 +6,19 @@ import './Compete.css';
 
 const Compete = () => {
   const [challengeInfoCards, setChallengeInfoCards] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetch('/data/challengeinfocards.json')
     .then(res => res.json())
-    .then(data => setChallengeInfoCards(data))
-    .catch(error => console.error('Error fetching challenge info cards:', error))
+    .then(data => {
+      setChallengeInfoCards(data[1]);
+      setLoading(false);
+    })
+    .catch(error => {
+      console.error('Error fetching challenge info cards:', error);
+      setLoading(false);
+    })
   },[]);
 
   return (
@@ -21,16 +28,21 @@ const Compete = () => {
       <h3 className="page__description">Our open challenges are in partnership with various non-profits, communities, businesses, and organizations.</h3>
     </header>
     <div className="compete-page__cards">
-        {challengeInfoCards.map(challengeInfo => (
-          <InfoCard 
-            key={uuidv4()}
-            title={challengeInfo.title}
-            collaborator={challengeInfo.collaborator}
-            collabLink={challengeInfo.collabLink}
-            image={challengeInfo.image}
-            competitionLink={challengeInfo.competitionLink}
-          />
-        ))}
+    {loading ? (
+          <div className="loading-placeholder">
+          </div>
+        ) : (
+          challengeInfoCards.map(challengeInfo => (
+            <InfoCard 
+              key={uuidv4()}
+              title={challengeInfo.title}
+              collaborator={challengeInfo.collaborator}
+              collabLink={challengeInfo.collabLink}
+              image={challengeInfo.image}
+              competitionLink={challengeInfo.competitionLink}
+            />
+          ))
+        )}
       </div>
     </div>
   )

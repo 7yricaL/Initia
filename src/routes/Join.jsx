@@ -5,15 +5,23 @@ import InitiaSchoolCard from '../components/InitiaSchoolCard.jsx';
 
 
 import './Join.css';
+import './Compete.css'
 
 const Join = () => {
   const [intiaSchoolCards, setInitiaSchoolCards] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetch('/data/initiaschoolcards.json')
     .then(res => res.json())
-    .then(data => setInitiaSchoolCards(data))
-    .catch(error => console.error('Error fetching initia school cards:', error))
+    .then(data => {
+      setInitiaSchoolCards(data);
+      setLoading(false);
+    })
+    .catch(error => {
+      console.error('Error fetching initia school cards:', error);
+      setLoading(false);
+    })
   },[]);
   
 
@@ -43,15 +51,20 @@ const Join = () => {
         </div>
       </section>
       <section className="school-cards__container">
-        {
-          intiaSchoolCards.map(schoolCard => (
-            <InitiaSchoolCard 
-              key={uuidv4()}
-              schoolName={schoolCard.schoolName}
-              joinLink={schoolCard.joinLink}
-              presidentName={schoolCard.presidentName}
-            />
-          ))
+        {loading ? (
+            <div className="loading-placeholder">
+              Loading...
+            </div>
+          ) : (
+            intiaSchoolCards.map(schoolCard => (
+              <InitiaSchoolCard 
+                key={uuidv4()}
+                schoolName={schoolCard.schoolName}
+                joinLink={schoolCard.joinLink}
+                presidentName={schoolCard.presidentName}
+              />
+            ))
+          )
         }
       </section>
     </div>
