@@ -7,6 +7,7 @@ import Navbar from './components/Navbar.jsx';
 import Compete from './routes/Compete.jsx';
 import RossWebsiteComp from './routes/rossleaders-website-competition.jsx';
 import RossLiteratureComp from './routes/rossleaders-literature-competition.jsx';
+import EconTireComp from './routes/economytire-market-research-competition.jsx';
 import Home from './routes/Home.jsx';
 import Join from './routes/Join.jsx';
 import Solutions from './routes/Solutions.jsx';
@@ -27,6 +28,7 @@ const App = () => {
         <Route path='/compete' element={<Compete />} />
         <Route path='/rossleaders-website-competition' element={<RossWebsiteComp />} />
         <Route path='/rossleaders-literature-competition' element={<RossLiteratureComp />} />
+        <Route path='/economytire-market-research-competition' element={<EconTireComp />} />
         <Route path='/solutions' element={<Solutions />} />
         <Route path='/team' element={<Team />} />
       </Routes>

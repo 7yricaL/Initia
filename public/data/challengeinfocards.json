@@ -22,7 +22,7 @@
       "collabLink": "https://rossleaders.com/",
       "image": "https://rossleaders.com/wp-content/uploads/2023/08/RLIMG.jpeg",
       "competitionLink": "/rossleaders-website-competition",
-      "deadline": "TBD",
+      "deadline": "December 1, 2024",
       "submissionLink": ""
     },
     {
@@ -31,7 +31,16 @@
       "collabLink": "https://rossleaders.com/",
       "image": "https://rossleaders.com/wp-content/uploads/2023/08/RLIMG.jpeg",
       "competitionLink": "/rossleaders-literature-competition",
-      "deadline": "TBD",
+      "deadline": "December 1, 2024",
+      "submissionLink": ""
+    },
+    {
+      "title": "Market Research Competition",
+      "collaborator": "Economy Tire",
+      "collabLink": "https://economytire.com/",
+      "image": "https://www.economytire.com/uploads/raw/Economy%20Tire%20Link/eti%20cropped.png",
+      "competitionLink": "/economytire-market-research-competition",
+      "deadline": "December 1, 2024",
       "submissionLink": ""
     }
   ]
