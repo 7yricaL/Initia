@@ -1,5 +1,39 @@
 [
     {
+      "title": "2024 Nutrition Competition",
+      "cards": [
+        {
+          "name": "1st Place",
+          "authors": "Avery Lee, Akshara Kakkar, Sophie Kidwell, Rehaan Chamakura, Krish Penumarthi",
+          "school": "",
+          "link": "#"
+        },
+        {
+          "name": "2nd Place",
+          "authors": "Elian Alkhoury, Hugo Duguay, Naveed Rauf, Sayesha Mahat, Lilah Gornell, Ibby Ghafour",
+          "school": "",
+          "link": "#"
+        },
+        {
+          "name": "3rd Place",
+          "authors": "Om Chavan",
+          "school": "",
+          "link": "#"
+        }
+      ]
+    },
+    {
+      "title": "2024 Medical Innovation Challenge",
+      "cards": [
+        {
+          "name": "1st Place",
+          "authors": "Aarushi Dharker, Sonia Naidu, Abby Nguyen, Navya Warrier",
+          "school": "",
+          "link": "#"
+        }
+      ]
+    },
+    {
       "title": "2024 Hypothetics Texas Snowstorm Challenge Winner",
       "cards": [
         {
