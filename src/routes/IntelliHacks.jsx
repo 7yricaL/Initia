@@ -4,12 +4,16 @@ import './IntelliHacks.css';
 
 const IntelliHacks = () => {
   const [activeTab, setActiveTab] = useState('figma');
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalContent, setModalContent] = useState(null);
 
   const figmaSlides = [
     {
-      title: "AI as Your Design Partner",
-      description: "Learn how to collaborate with AI tools to enhance your design workflow, not replace your creativity.",
-      status: "coming-soon"
+      title: "IntelliHacks Introduction",
+      description: "Learn about collaborating with AI tools to enhance your design workflow, not replace your creativity.",
+      status: "available",
+      type: "figma",
+      url: "https://embed.figma.com/deck/pilPOY5hc9LmWHHb0XGGRQ/Intelli-Hacks?node-id=1-42&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&embed-host=share"
     },
     {
       title: "Prompt Engineering for Designers",
@@ -141,6 +145,12 @@ const IntelliHacks = () => {
                   background: colors.gradient,
                   color: 'white',
                   border: 'none'
+                }}
+                onClick={() => {
+                  if (item.url) {
+                    setModalContent(item);
+                    setModalOpen(true);
+                  }
                 }}
               >
                 Explore
@@ -383,6 +393,44 @@ const IntelliHacks = () => {
           </div>
         </section>
       </div>
+
+      {/* Modal for Figma embeds */}
+      {modalOpen && modalContent && (
+        <div 
+          className="intelli-hacks__modal-overlay"
+          onClick={() => setModalOpen(false)}
+        >
+          <div 
+            className="intelli-hacks__modal-content"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="intelli-hacks__modal-header">
+              <h3>{modalContent.title}</h3>
+              <button 
+                className="intelli-hacks__modal-close"
+                onClick={() => setModalOpen(false)}
+              >
+                ×
+              </button>
+            </div>
+            <div className="intelli-hacks__modal-body">
+              {modalContent.type === 'figma' && modalContent.url && (
+                <iframe
+                  style={{
+                    border: '1px solid rgba(0, 0, 0, 0.1)',
+                    borderRadius: '12px'
+                  }}
+                  width="100%"
+                  height="600"
+                  src={modalContent.url}
+                  allowFullScreen
+                  title={modalContent.title}
+                />
+              )}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
