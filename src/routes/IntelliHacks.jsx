@@ -14,7 +14,7 @@ const IntelliHacks = () => {
       status: "available",
       type: "figma",
       url: "https://embed.figma.com/deck/pilPOY5hc9LmWHHb0XGGRQ/Intelli-Hacks?node-id=1-42&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&embed-host=share",
-      image: "/public/cards/intelli-hack-intro.png" // Add your image path here
+      image: "/cards/intelli-hack-intro.png" // Add your image path here
     },
     {
       title: "Prompt Engineering for Designers",
