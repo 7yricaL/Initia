@@ -199,9 +199,26 @@ html {
   transition: left 0.5s ease;
 }
 
-.intelli-hacks__card-icon {
-  font-size: 3.5rem;
+.intelli-hacks__card-image-container {
   margin-bottom: 1.5rem;
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.intelli-hacks__card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.intelli-hacks__card:hover .intelli-hacks__card-image {
+  transform: scale(1.05);
 }
 
 .intelli-hacks__card-title {
@@ -339,10 +356,6 @@ html {
   font-size: 1.5rem;
   font-weight: 600;
   color: #1d1d1f;
-  background: linear-gradient(135deg, #007AFF 0%, #5856D6 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .intelli-hacks__modal-close {

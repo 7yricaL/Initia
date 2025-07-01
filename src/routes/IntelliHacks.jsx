@@ -13,7 +13,8 @@ const IntelliHacks = () => {
       description: "Learn about collaborating with AI tools to enhance your design workflow, not replace your creativity.",
       status: "available",
       type: "figma",
-      url: "https://embed.figma.com/deck/pilPOY5hc9LmWHHb0XGGRQ/Intelli-Hacks?node-id=1-42&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&embed-host=share"
+      url: "https://embed.figma.com/deck/pilPOY5hc9LmWHHb0XGGRQ/Intelli-Hacks?node-id=1-42&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&embed-host=share",
+      image: "/public/cards/intelli-hack-intro.png" // Add your image path here
     },
     {
       title: "Prompt Engineering for Designers",
@@ -29,14 +30,20 @@ const IntelliHacks = () => {
 
   const interviewVideos = [
     {
-      title: "Industry Leaders on AI Productivity",
-      description: "Conversations with professionals who use AI as a tool to amplify their capabilities.",
-      status: "coming-soon"
+      title: "Effects of AI in Research",
+      description: "Dr. Joshi discusses how AI affects the research industry productively and destructively  in research proposals.",
+      status: "available",
+      type: "video",
+      url: "https://www.youtube.com/embed/your-video-id",
+      //image: "/public/cards/ai-research-effects.png"
     },
     {
-      title: "Student Success Stories",
-      description: "Real experiences from students who've learned to work alongside AI effectively.",
-      status: "coming-soon"
+      title: "Effects of AI in Universities",
+      description: "Discussing AI in a university setting through the lens of computational mathematics and physics.",
+      status: "available",
+      type: "video",
+      url: "https://drive.google.com/file/d/1GHjn_GLGU3Jc4yWTSzwPaG3MuiRh5JA5/preview",
+      //image: "/public/cards/ai-research-effects.png"
     },
     {
       title: "Ethics of AI Collaboration",
@@ -101,6 +108,13 @@ const IntelliHacks = () => {
           <div 
             key={index} 
             className="intelli-hacks__card"
+            onClick={() => {
+              if (item.status === 'available' && item.url) {
+                setModalContent(item);
+                setModalOpen(true);
+              }
+            }}
+            style={{ cursor: item.status === 'available' ? 'pointer' : 'default' }}
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = 'translateY(-8px)';
               e.currentTarget.style.boxShadow = `0 12px 40px ${colors.shadowColor}`;
@@ -125,7 +139,17 @@ const IntelliHacks = () => {
               {activeTab === 'videos' && <FaVideo />}
               {activeTab === 'demos' && <FaCode />}
             </div>
-            <h3 className="intelli-hacks__card-title">{item.title}</h3>
+            {item.status === 'available' && item.image ? (
+              <div className="intelli-hacks__card-image-container">
+                <img 
+                  src={item.image} 
+                  alt={item.title}
+                  className="intelli-hacks__card-image"
+                />
+              </div>
+            ) : (
+              <h3 className="intelli-hacks__card-title">{item.title}</h3>
+            )}
             <p className="intelli-hacks__card-description">{item.description}</p>
             {item.status === 'coming-soon' ? (
               <span 
@@ -146,7 +170,8 @@ const IntelliHacks = () => {
                   color: 'white',
                   border: 'none'
                 }}
-                onClick={() => {
+                onClick={(e) => {
+                  e.stopPropagation(); // Prevent card click event
                   if (item.url) {
                     setModalContent(item);
                     setModalOpen(true);
@@ -405,7 +430,22 @@ const IntelliHacks = () => {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="intelli-hacks__modal-header">
-              <h3>{modalContent.title}</h3>
+              <h3 style={{
+                background: activeTab === 'figma' 
+                  ? 'linear-gradient(135deg, #007AFF 0%, #5856D6 100%)'
+                  : activeTab === 'videos'
+                  ? 'linear-gradient(135deg, #AF52DE 0%, #FF2D92 100%)'
+                  : 'linear-gradient(135deg, #FF6B35 0%, #FF2D92 100%)',
+                backgroundClip: 'text',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                margin: 0,
+                fontSize: '1.5rem',
+                fontWeight: '600',
+                color: '#1d1d1f'
+              }}>
+                {modalContent.title}
+              </h3>
               <button 
                 className="intelli-hacks__modal-close"
                 onClick={() => setModalOpen(false)}
@@ -425,6 +465,20 @@ const IntelliHacks = () => {
                   src={modalContent.url}
                   allowFullScreen
                   title={modalContent.title}
+                />
+              )}
+              {modalContent.type === 'video' && modalContent.url && (
+                <iframe
+                  style={{
+                    border: '1px solid rgba(0, 0, 0, 0.1)',
+                    borderRadius: '12px'
+                  }}
+                  width="100%"
+                  height="600"
+                  src={modalContent.url}
+                  allowFullScreen
+                  title={modalContent.title}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 />
               )}
             </div>
