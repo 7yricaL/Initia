@@ -56,17 +56,20 @@ const IntelliHacks = () => {
     {
       title: "Code Review with AI",
       description: "Interactive demo showing how AI can help review and improve your code while you learn.",
-      status: "coming-soon"
+      status: "coming-soon",
+      type: "video" // Ready for when you have video content
     },
     {
       title: "Research Assistant Training",
       description: "Learn to use AI as a research partner for gathering and analyzing information.",
-      status: "coming-soon"
+      status: "coming-soon",
+      type: "video" // Ready for when you have video content
     },
     {
       title: "Writing Enhancement Workshop",
       description: "Discover how AI can help refine your writing while preserving your voice.",
-      status: "coming-soon"
+      status: "coming-soon",
+      type: "video" // Ready for when you have video content
     }
   ];
 
