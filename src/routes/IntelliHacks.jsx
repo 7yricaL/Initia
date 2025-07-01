@@ -177,22 +177,88 @@ const IntelliHacks = () => {
           </p>
           
           <div className="intelli-hacks__cards-grid">
-            <div className="intelli-hacks__card">
-              <div className="intelli-hacks__card-icon"><FaRocket /></div>
+            <div 
+              className="intelli-hacks__card"
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-8px)';
+                e.currentTarget.style.boxShadow = '0 12px 40px rgba(0, 122, 255, 0.15)';
+                e.currentTarget.style.borderColor = '#007AFF';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.06)';
+                e.currentTarget.style.borderColor = '#f5f5f7';
+              }}
+            >
+              <div 
+                className="intelli-hacks__card-icon"
+                style={{
+                  background: 'linear-gradient(135deg, #007AFF 0%, #5856D6 100%)',
+                  backgroundClip: 'text',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent'
+                }}
+              >
+                <FaRocket />
+              </div>
               <h3 className="intelli-hacks__card-title">Amplify, Don't Replace</h3>
               <p className="intelli-hacks__card-description">
                 Learn to use AI to boost your productivity and capabilities rather than depending on it to do the work for you.
               </p>
             </div>
-            <div className="intelli-hacks__card">
-              <div className="intelli-hacks__card-icon"><FaTools /></div>
+            <div 
+              className="intelli-hacks__card"
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-8px)';
+                e.currentTarget.style.boxShadow = '0 12px 40px rgba(175, 82, 222, 0.15)';
+                e.currentTarget.style.borderColor = '#AF52DE';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.06)';
+                e.currentTarget.style.borderColor = '#f5f5f7';
+              }}
+            >
+              <div 
+                className="intelli-hacks__card-icon"
+                style={{
+                  background: 'linear-gradient(135deg, #AF52DE 0%, #FF2D92 100%)',
+                  backgroundClip: 'text',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent'
+                }}
+              >
+                <FaTools />
+              </div>
               <h3 className="intelli-hacks__card-title">Tool Mastery</h3>
               <p className="intelli-hacks__card-description">
                 Develop expertise in AI tools while maintaining control over the creative and decision-making process.
               </p>
             </div>
-            <div className="intelli-hacks__card">
-              <div className="intelli-hacks__card-icon"><FaBrain /></div>
+            <div 
+              className="intelli-hacks__card"
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-8px)';
+                e.currentTarget.style.boxShadow = '0 12px 40px rgba(255, 107, 53, 0.15)';
+                e.currentTarget.style.borderColor = '#FF6B35';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.06)';
+                e.currentTarget.style.borderColor = '#f5f5f7';
+              }}
+            >
+              <div 
+                className="intelli-hacks__card-icon"
+                style={{
+                  background: 'linear-gradient(135deg, #FF6B35 0%, #FF2D92 100%)',
+                  backgroundClip: 'text',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent'
+                }}
+              >
+                <FaBrain />
+              </div>
               <h3 className="intelli-hacks__card-title">Critical Thinking</h3>
               <p className="intelli-hacks__card-description">
                 Strengthen your ability to evaluate, refine, and improve AI-generated content with human insight.
