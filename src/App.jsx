@@ -12,6 +12,7 @@ import Home from './routes/Home.jsx';
 import Join from './routes/Join.jsx';
 import Solutions from './routes/Solutions.jsx';
 import Team from './routes/Team.jsx';
+import IntelliHacks from './routes/IntelliHacks.jsx';
 
 import './App.css';
 import Request from './routes/Request.jsx';
@@ -31,6 +32,7 @@ const App = () => {
         <Route path='/economytire-market-research-competition' element={<EconTireComp />} />
         <Route path='/solutions' element={<Solutions />} />
         <Route path='/team' element={<Team />} />
+        <Route path='/intelli-hacks' element={<IntelliHacks />} />
       </Routes>
       <Footer />
     </>

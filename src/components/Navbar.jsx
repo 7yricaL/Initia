@@ -14,6 +14,7 @@ const DesktopNavbar = () => {
                 <li className="desktop-navbar__item"><Link to='/join' className="desktop-navbar__link">Join</Link></li>
                 <li className="desktop-navbar__item"><Link to='/compete' className="desktop-navbar__link">Compete</Link></li>
                 <li className="desktop-navbar__item"><Link to='/solutions' className="desktop-navbar__link">Solutions</Link></li>
+                <li className="desktop-navbar__item"><Link to='/intelli-hacks' className="desktop-navbar__link">IntelliHacks</Link></li>
                 <li className="desktop-navbar__item"><Link to='/team' className="desktop-navbar__link">Team</Link></li>
             </ul>
         </nav>

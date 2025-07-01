@@ -28,6 +28,7 @@ const MobileNavbar = () => {
                   <li className="navbar__item"><Link to='/join' className="navbar__link" onClick={closeMenu}>Join</Link></li>
                   <li className="navbar__item"><Link to='/compete' className="navbar__link" onClick={closeMenu}>Compete</Link></li>
                   <li className="navbar__item"><Link to='/solutions' className="navbar__link" onClick={closeMenu}>Solutions</Link></li>
+                  <li className="navbar__item"><Link to='/intelli-hacks' className="navbar__link" onClick={closeMenu}>IntelliHacks</Link></li>
                   <li className="navbar__item"><Link to='/team' className="navbar__link" onClick={closeMenu}>Team</Link></li>
               </ul>
           </div>
