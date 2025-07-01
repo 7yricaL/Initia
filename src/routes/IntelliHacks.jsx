@@ -34,7 +34,7 @@ const IntelliHacks = () => {
       description: "Dr. Joshi discusses how AI affects the research industry productively and destructively  in research proposals.",
       status: "available",
       type: "video",
-      url: "https://www.youtube.com/embed/your-video-id",
+      url: "https://drive.google.com/file/d/183RQalQACPx0_HrSbMWXw0vVloKBRZuG/preview",
       //image: "/public/cards/ai-research-effects.png"
     },
     {
@@ -46,9 +46,12 @@ const IntelliHacks = () => {
       //image: "/public/cards/ai-research-effects.png"
     },
     {
-      title: "Ethics of AI Collaboration",
-      description: "Discussions on responsible AI use and maintaining human creativity.",
-      status: "coming-soon"
+      title: "AI in High Performance Computing",
+      description: "Riyaz, a computational scientist at Lawrence Livermore National Laboratory, discusses the applications, benefits, and concerns of AI in his field.",
+      status: "available",
+      type: "video",
+      url: "https://drive.google.com/file/d/1S4uTGPdq69_NI-hgE8UvuifLwjGFhS6d/preview",
+      //image: "/public/cards/ai-research-effects.png"
     }
   ];
 
