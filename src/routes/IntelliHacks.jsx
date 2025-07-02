@@ -210,6 +210,36 @@ const IntelliHacks = () => {
       </div>
 
       <div id="content" className="intelli-hacks__content">
+        {/* Pilot Video Section */}
+        <section className="intelli-hacks__pilot-section">
+          <div className="intelli-hacks__pilot-container">
+            <div className="intelli-hacks__pilot-content">
+              <h2 className="intelli-hacks__pilot-title">
+                Watch Our Introduction
+              </h2>
+              <p className="intelli-hacks__pilot-description">
+                Get an overview of everything IntelliHacks has to offer. This pilot video walks through 
+                our initial content and shows you what we stand for.
+              </p>
+            </div>
+            <div className="intelli-hacks__pilot-video">
+              <div className="intelli-hacks__video-container">
+                <iframe
+                  src="PUT_LINK_LATER"
+                  title="IntelliHacks Pilot Introduction"
+                  allowFullScreen
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                />
+                <div className="intelli-hacks__video-overlay">
+                  <div className="intelli-hacks__play-button">
+                    <FaVideo />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="intelli-hacks__section">
           <h2 className="intelli-hacks__section-title intelli-hacks__section-title--gradient">
             Our Philosophy
