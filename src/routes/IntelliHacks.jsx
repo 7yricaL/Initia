@@ -42,7 +42,7 @@ const IntelliHacks = () => {
       description: "Discussing AI in a university setting through the lens of computational mathematics and physics.",
       status: "available",
       type: "video",
-      url: "https://drive.google.com/file/d/1GHjn_GLGU3Jc4yWTSzwPaG3MuiRh5JA5/preview",
+      url: "https://drive.google.com/file/d/1p2t19eMbdiS7J9tz2Cajzi4XM4aZwhHw/preview",
       //image: "/public/cards/ai-research-effects.png"
     },
     {
