@@ -64,16 +64,18 @@ const IntelliHacks = () => {
       url: "https://drive.google.com/file/d/1s6rQv9R_1rH_ZFCHfwft8IN5xLmqPaeR/preview"
     },
     {
-      title: "Research Assistant Training",
-      description: "Learn to use AI as a research partner for gathering and analyzing information.",
-      status: "coming-soon",
-      type: "video" // Ready for when you have video content
+      title: "Brainstorm with AI",
+      description: "Lay out ideas in a workspace, and let an AI assistant help you organize your ideas. Good for studying and planning activities!",
+      status: "available",
+      type: "video", // Ready for when you have video content
+      url: "https://drive.google.com/file/d/15qsQbzZduVocIrbzaMKpyvG3yRVAkwgz/preview"
     },
     {
-      title: "Writing Enhancement Workshop",
-      description: "Discover how AI can help refine your writing while preserving your voice.",
-      status: "coming-soon",
-      type: "video" // Ready for when you have video content
+      title: "Task Automation with AI",
+      description: "Set up AI agents to perform actions based on triggers from external tools.",
+      status: "available",
+      type: "video", // Ready for when you have video content
+      url: "https://drive.google.com/file/d/1A3MXK7W4kuiPnosE_B_cYqMVv6CTBzrD/preview"
     }
   ];
 
