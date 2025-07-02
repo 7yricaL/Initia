@@ -225,7 +225,7 @@ const IntelliHacks = () => {
             <div className="intelli-hacks__pilot-video">
               <div className="intelli-hacks__video-container">
                 <iframe
-                  src="https://www.canva.com/design/DAGr-AVkAAU/Rp_i0biHmqpSFkO34vGk5A/watch"
+                  src="https://www.canva.com/design/DAGr-AVkAAU/Fb8U8hZfXD9VB7XN2CYs3Q/watch"
                   title="IntelliHacks Pilot Introduction"
                   allowFullScreen
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
