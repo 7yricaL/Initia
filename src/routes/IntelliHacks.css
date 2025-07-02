@@ -579,11 +579,45 @@ html {
     padding: 0 1rem;
   }
   
+  .intelli-hacks__pilot-section {
+    padding: 0 1rem;
+  }
+  
   .intelli-hacks__pilot-container {
     grid-template-columns: 1fr;
     gap: 2rem;
     padding: 2rem;
     text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .intelli-hacks__pilot-content {
+    align-items: center;
+    max-width: 100%;
+  }
+  
+  .intelli-hacks__pilot-title {
+    font-size: 2rem;
+  }
+  
+  .intelli-hacks__pilot-description {
+    font-size: 1.1rem;
+  }
+  
+  .intelli-hacks__pilot-video {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .intelli-hacks__video-container {
+    height: 250px;
+    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -612,8 +646,8 @@ html {
     height: 400px;
   }
   
-  .intelli-hacks__video-container {
-    height: 250px;
+  .intelli-hacks__pilot-section {
+    padding: 0 0.5rem;
   }
   
   .intelli-hacks__pilot-container {
