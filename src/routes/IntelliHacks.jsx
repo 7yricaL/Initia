@@ -57,10 +57,11 @@ const IntelliHacks = () => {
 
   const handsonDemos = [
     {
-      title: "Code Review with AI",
-      description: "Interactive demo showing how AI can help review and improve your code while you learn.",
-      status: "coming-soon",
-      type: "video" // Ready for when you have video content
+      title: "Composing Scenes with AI",
+      description: "Learn how you can use AI along side your creativity in Blender 3D to jumpstart your projects.",
+      status: "available",
+      type: "video", // Ready for when you have video content
+      url: "https://drive.google.com/file/d/1s6rQv9R_1rH_ZFCHfwft8IN5xLmqPaeR/preview"
     },
     {
       title: "Research Assistant Training",
