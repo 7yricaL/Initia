@@ -43,7 +43,12 @@ html {
   font-weight: 800;
   margin-bottom: 1.5rem;
   line-height: 1.05;
-  background: linear-gradient(135deg, #007AFF 0%, #5856D6 25%, #AF52DE 50%, #FF2D92 75%, #FF6B35 100%);
+  background: linear-gradient(135deg, 
+    #64ffda 0%, 
+    #7c4dff 25%, 
+    #e91e63 50%, 
+    #ff9800 75%, 
+    #4caf50 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
